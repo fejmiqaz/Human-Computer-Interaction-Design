@@ -1,0 +1,3 @@
+Create a Django app to manage a sports supplement store. Each supplement is characterized by a name, company manufacturer, description, and information about which category it belongs to, the user who created the product, a photo of the product, price, and quantity. For each category, a name, description, and whether it is active (bool) are stored. For each manufacturing company, its name, date of incorporation and type of company (small, medium, large) are stored. All models need to register in the admin panel.
+
+When a supplement is created, the user is automatically assigned according to the announced user.
