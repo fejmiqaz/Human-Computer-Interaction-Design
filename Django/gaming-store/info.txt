@@ -1,0 +1,3 @@
+Create a Django app to manage a gaming store. Each game is characterized by a title, game studio, description, information about which category it belongs to (action, RPG, sports, etc.), the user who added the game, a cover image, price, and number of copies available. For each category, a name, description, and whether it is active (bool) are stored. For each game studio, its name, country, and year founded are stored. All models must be registered in the admin panel.
+
+When a game is created, the user is automatically assigned according to the logged-in user.
