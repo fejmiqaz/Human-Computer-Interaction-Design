@@ -1,0 +1,3 @@
+Create a Django app to manage a restaurant menu. Each menu item is characterized by a name, supplier company, description, information about which category it belongs to (appetizer, main course, dessert, etc.), the user who added the item, a food image, price, and availability quantity. For each category, a name, description, and whether it is active (bool) are stored. For each supplier company, its name, country, and date of partnership are stored. All models must be registered in the admin panel.
+
+When a menu item is created, the user is automatically assigned according to the logged-in user.
