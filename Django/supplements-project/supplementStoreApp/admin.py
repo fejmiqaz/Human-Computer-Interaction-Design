@@ -14,3 +14,10 @@ class ManufacturerAdmin(admin.ModelAdmin):
 @admin.register(Supplement)
 class SupplementAdmin(admin.ModelAdmin):
     list_display = ("name","description","category", "user", "photo", "price", "quantity")
+
+    # Automatically assign the user according to creation.
+    exclude = ["user"]
+    def save_model(self, request, obj, form, change):
+        if not obj.pk:
+            obj.user = request.user
+        super().save_model(request, obj, form, change)
