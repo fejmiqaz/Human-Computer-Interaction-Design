@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Tour</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    #topContainer {
+        background-image: url("images/cover.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+
+    a.navbar-brand:hover {
+        color: blue;
+    }
+
+</style>
+
+<body>
+
+<!-- NAVBAR SECTION + HEADER SECTION -->
+
+<div id="topContainer" class="container-fluid d-grid" style="border: 1px black solid">
+    <div class="container-fluid d-flex justify-content-between align-items-start pt-3">
+        <nav class="navbar navbar-collapse">
+            <img src="images/logo.png" alt="" style="width: 250px">
+            <a class="navbar-brand" href="#">HOME</a>
+            <a class="navbar-brand" href="#">TOURS</a>
+            <a class="navbar-brand" href="#">ABOUT</a>
+            <a class="navbar-brand" href="#">ADVANTAGES</a>
+            <a class="navbar-brand" href="#">BLOG</a>
+            <a class="navbar-brand" href="#">CONTACT</a>
+        </nav>
+    </div>
+
+    <div class="container d-grid justify-content-center align-items-lg-start">
+        <h1 class="text-white">The Best Trips Around Iceland Begin With Us</h1>
+        <div class="container">
+            <input  type="date" class="btn bg-light">
+            <select class="btn bg-light">
+                <option selected>Select price</option>
+                <option value="0-100">0-100$</option>
+                <option value="0-100">100-500$</option>
+                <option value="0-100">500-1000$</option>
+            </select>
+            <button class="btn bg-primary text-white">Search Tours</button>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-md-start">
+        <a href="#" class="text-white px-2">Facebook</a>
+        <a href="#" class="text-white px-2">LinkedIn</a>
+        <a href="#" class="text-white px-2">GitHub</a>
+    </div>
+
+</div>
+
+<div class="container">
+    <h1 class="text-center pt-3">Best Sellers</h1>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl1.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">7days/6nights</p>
+                        <p class="text-primary fw-bold"> From 1000$</p>
+                    </div>
+                    <h4 class="card-title">Winter Wonders and Delicious Detours</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl2.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">3days/2nights</p>
+                        <p class="text-primary fw-bold"> From 500$</p>
+                    </div>
+                    <h4 class="card-title">South Shore and Glacier Lagoon Mini-Tour</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl3.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">1 night</p>
+                        <p class="text-primary fw-bold"> From 800$</p>
+                    </div>
+                    <h4 class="card-title">Northern Lights Mystery</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl4.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">7days/6nights</p>
+                        <p class="text-primary fw-bold"> From 900$</p>
+                    </div>
+                    <h4 class="card-title">Golden Circle Tour</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl5.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">7days/6nights</p>
+                        <p class="text-primary fw-bold"> From 1200$</p>
+                    </div>
+                    <h4 class="card-title">South Iceland Winter Explorer - Super Jeep Adventure</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-0 h-100" style="width: 18rem;">
+                <img src="images/sl6.jpg" class="card-img-top p-3" alt="...">
+                <div class="card-body">
+                    <div class="container d-flex justify-content-between">
+                        <p class="text-secondary">7days/6nights</p>
+                        <p class="text-primary fw-bold"> From 1500$</p>
+                    </div>
+                    <h4 class="card-title">South Iceland Express Road Trip</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid d-flex align-items-center justify-content-center bg-light">
+    <div class="row py-5 container">
+            <div class="col justify-content-center align-items-center">
+                <h1>Get In Touch</h1>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nameFormControlInput"
+                           placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                           placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                </div>
+                <button class="btn bg-primary text-white">Send</button>
+            </div>
+
+            <div class="col d-grid justify-content-center align-items-center"">
+                <h1>Contact Information</h1>
+                <h2>1-800-1234-657</h2>
+                <h3>info@info.org</h3>
+                <div class="container d-flex justify-content-center">
+                    <a class="px-2" href="#">FB</a>
+                    <a class="px-2" href="#">LN</a>
+                    <a class="px-2" href="#">GHB</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+</body>
+</html>
