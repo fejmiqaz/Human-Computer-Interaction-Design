@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.5-dist/css/bootstrap.min.css">
+</head>
+
+<style>
+    .headerBackground {
+        background-image: url("images/5.jpg");
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+</style>
+
+<body>
+
+<!-- HEADER SECTION -->
+
+<div class="container-fluid d-flex justify-content-center align-items-center headerBackground">
+    <div class="container justify-content-center align-items-center text-center text-white py-2 bg-danger-subtle" style="border-radius: 5%">
+        <h1 class="text-danger-emphasis fw-bold">Welcome to Sweet Moments</h1>
+        <h5 class="text-danger-emphasis">Delicious pastries and a cozy atmosphere await you.</h5>
+        <h5 class="text-danger-emphasis">Enjoy our freshly baked treats made with love</h5>
+        <button class="btn btn-danger fw-bold">View Our Menu</button>
+    </div>
+</div>
+
+<!-- FEATURED PRODUCTS CARDS SECTION -->
+
+<div class="container-fluid bg-danger-subtle py-4">
+    <h1 class="text-center text-danger-emphasis">
+        Featured Products
+    </h1>
+    <div class="container d-flex justify-content-center align-items-start gap-4 py-3">
+        <div class="card" style="width: 18rem;">
+            <img src="images/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-danger-emphasis">Chocolate cake</h5>
+                <p class="card-text text-danger-emphasis">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <h5 class="text-danger-emphasis">$4.99</h5>
+                <a href="#" class="btn btn-danger">Order Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-danger-emphasis">Croissant</h5>
+                <p class="card-text text-danger-emphasis">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <h5 class="text-danger-emphasis">$2.49</h5>
+                <a href="#" class="btn btn-danger">Order Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-danger-emphasis">Cheesecake</h5>
+                <p class="card-text text-danger-emphasis">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                <h5 class="text-danger-emphasis">$5.99</h5>
+                <a href="#" class="btn btn-danger">Order Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT US SECTION -->
+
+<div class="container-fluid d-flex align-items-center justify-content-start py-5">
+    <div class="container">
+        <img src="images/1.jpg" style="height: 100%; width: 100%">
+    </div>
+    <div class="container  justify-content-start align-items-center">
+        <h2 class="text-danger-emphasis">About Us</h2>
+        <p class="text-danger-emphasis">Some quick example text to build on the card title and make up the bulk of the
+            card’s content.</p>
+        <button class="btn btn-danger">Learn More</button>
+    </div>
+</div>
+
+<!-- RESERVATION SECTION -->
+
+<div class="container-fluid bg-danger-subtle py-4">
+    <h1 class="text-center text-danger-emphasis">Make a Reservation</h1>
+    <div class="container d-flex justify-content-center align-items-center gap-2">
+        <div class="mb-3 container-fluid">
+            <label for="fullNameInput" class="form-label text-danger-emphasis">Full Name</label>
+            <input type="email" class="form-control" id="fullNameInput" placeholder="Enter Full Name">
+        </div>
+        <div class="mb-3 container-fluid">
+            <label for="exampleFormControlInput1" class="form-label text-danger-emphasis">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center gap-2">
+        <div class="mb-3 container-fluid">
+            <label for="dateInput" class="form-label text-danger-emphasis">Date</label>
+            <input type="date" class="form-control" id="dateInput">
+        </div>
+        <div class="mb-3 container-fluid">
+            <label for="timeInput" class="form-label text-danger-emphasis">Time</label>
+            <input type="time" class="form-control" id="timeInput">
+        </div>
+        <div class="mb-3 container-fluid">
+            <label for="rangeNumber" class="form-label text-danger-emphasis">Number</label>
+            <input type="number" class="form-control" id="rangeNumber">
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center gap-2">
+        <div class="mb-3 container-fluid">
+            <label for="specialRequests" class="form-label text-danger-emphasis">Special Requests</label>
+            <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-start align-items-center gap-2">
+        <button class="btn btn-danger">Book Now</button>
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+
+<div class="container-fluid bg-danger-subtle py-4">
+    <h5 class="text-center text-danger-emphasis">@ Pastticeria Ambrella. All rights reserved.</h5>
+</div>
+
+</body>
+</html>
