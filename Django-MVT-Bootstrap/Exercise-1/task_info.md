@@ -1,4 +1,5 @@
-#Django Forms, Views & Urls
+Django Forms, Views & Urls
+
 You are tasked with creating a car management system that allows users to add and manage cars from different manufacturers. The system should display detailed information about each car, including its name, type, manufacturer, image, horsepower, maximum speed, and color. Each car added to the system is associated with a specific user who adds it. The type of a car can be one of several predefined categories, such as Sedan, Hatchback, Coupe, or Liftback.
 
 The manufacturers responsible for producing the cars are described by their name, the name of the company owner, and the country where the manufacturer is based. A manufacturer can be linked to multiple cars, while each car can have only one manufacturer. Users can view only the manufacturers that produce cars they own, ensuring that each user’s manufacturer list is personalized and relevant to their added cars.
