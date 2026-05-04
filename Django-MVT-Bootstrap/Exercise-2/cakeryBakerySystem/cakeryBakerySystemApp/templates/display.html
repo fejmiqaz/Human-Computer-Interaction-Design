@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid bg-danger">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="container">
+                <h1 class="text-white">Explore the wonderland of tastes!</h1>
+                <h5 class="text-white">Assignment for HCI Exam in Janunary 2025</h5>
+                <div class="container d-flex align-items-start justify-content-start">
+                    <div class="btn bg-white mx-2">
+                        <p>Get Started</p>
+                    </div>
+                    <div class="btn border-white mx-2">
+                        <p class="text-white">Learn More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <img src="{% static 'images/cake.png' %}" style="width: 500px; height: 500px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light text-center">
+        <div class="container py-5">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deleniti
+                dignissimos eaque hic mollitia
+                obcaecati qui quos sit voluptatum. Consequuntur, officiis, quibusdam? Dolor eligendi error et, inventore
+                magni
+                modi nihil"</p>
+            <p>John Doe / CEO, Cakery&Backery</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container py-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for cake in cakes %}
+                    <div class="col">
+                        <div class="card">
+                            <img src="{{ cake.picture.url }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ cake.name }}</h5>
+                                <p class="card-text">{{ cake.description }}.</p>
+                                <div class="container d-flex align-items-center justify-content-start">
+                                    <img src="{{ cake.baker.picture.url }}" alt="">
+                                    <p>{{ cake.baker }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

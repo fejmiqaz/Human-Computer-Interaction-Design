@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.5-dist/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container py-5">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="container-fluid justify-content-start align-items-center">
+                    <h1>Architecture</h1>
+                    <h1 class="text-light-emphasis">Bureau</h1>
+                </div>
+                <img src="{% static 'images/house.png' %}" alt="">
+            </div>
+        </div>
+
+        <div class="container py-3">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <img src="{% static 'images/house.png' %}" alt="">
+
+                <div class="container-fluid justify-content-center align-items-center">
+                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        At distinctio id praesentium quas,
+                        recusandae rem reprehenderit sunt veniam! Dignissimos dolorum eum inventore laudantium nesciunt
+                        officia perspiciatis quidem sint sunt vero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h1 class="text-black text-center">We offer a variety of projects</h1>
+        <div class="row mb-5">
+            {% for p in properties %}
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card rounded-0 border-0 bg-secondary-subtle" style="width: 18rem;">
+                        {% if p.picture %}
+                            <img src="{{ p.picture.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'images/house.png' %}" alt="">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ p.name }}</h5>
+                            <p class="card-text">{{ p.description }}</p>
+                            <p class="card-text">Area: {{ p.area }}</p>
+                            <p class="card-text">Price: {{ p.price }}</p>
+                            <a href="{% url 'edit' id=p.id %}" class="btn btn-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

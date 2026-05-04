@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid justify-content-center align-items-center">
+        <div class="container">
+            <div>
+                <h1>EDIT: {{ property.name }}</h1>
+            </div>
+            <div>
+                {% if property.picture %}
+                    <img src="{{ property.picture.url }}" alt="">
+                {% else %}
+                    <img src="{% static 'images/house.png' %}" alt="">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <form action="{% url 'edit' id=property.id %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock %}
