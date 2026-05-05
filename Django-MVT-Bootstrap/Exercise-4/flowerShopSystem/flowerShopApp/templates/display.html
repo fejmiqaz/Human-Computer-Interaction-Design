@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid bg-light">
+        <div class="container d-flex py-3 justify-content-center align-items-center">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <img src="{{ bouquet.photo.url }}" alt="" height="250px" width="500px">
+            </div>
+
+            <div class="container-fluid">
+                <h1 class="text-center">Displaying: {{ bouquet.name }}</h1>
+                <h1 class="text-center">Type: {{ bouquet.type }}</h1>
+                <h1 class="text-center">Size: {{ bouquet.size }}</h1>
+                <h1 class="text-center">Price: {{ bouquet.price }}</h1>
+                <h1 class="text-center">Year: {{ bouquet.year }}</h1>
+                {% if bouquet.isFresh %}
+                    <h1 class="text-center">The bouquet is fresh.</h1>
+                {% else %}
+                    <h1 class="text-center">The bouquet is not fresh.</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

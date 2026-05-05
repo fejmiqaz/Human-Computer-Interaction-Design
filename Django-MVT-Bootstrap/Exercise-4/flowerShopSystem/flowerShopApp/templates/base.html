@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Shop Application</title>
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.5-dist/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href={% url 'index' %}>
+                <img src="{% static 'images/logo.png' %}" alt="" width="100" height="50"
+                     class="d-inline-block align-text-top">
+                Flower Shop
+            </a>
+        </div>
+    </nav>
+</header>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

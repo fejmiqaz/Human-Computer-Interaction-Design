@@ -3,9 +3,9 @@
   <component name="FacetManager">
     <facet type="django" name="Django">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$/Django-MVT-Bootstrap/Exercise-3" />
-        <option name="settingsModule" value="realEstateSystem/realEstateSystem/settings.py" />
-        <option name="manageScript" value="realEstateSystem/manage.py" />
+        <option name="rootFolder" value="$MODULE_DIR$/Django-MVT-Bootstrap/Exercise-4" />
+        <option name="settingsModule" value="flowerShopSystem/flowerShopSystem/settings.py" />
+        <option name="manageScript" value="flowerShopSystem/manage.py" />
         <option name="environment" value="&lt;map/&gt;" />
         <option name="doNotUseTestRunner" value="false" />
         <option name="trackFilePattern" value="" />

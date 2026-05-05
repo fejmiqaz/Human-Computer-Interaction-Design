@@ -1,0 +1,15 @@
+Create a Django application for managing a flower shop.
+
+For each bouquet, the following information should be stored: type of flower, name of arrangement, size of the bouquet (small, medium, large), user who created the product, photo of the product, price, year of preparation, information about whether the bouquet is fresh or not.
+
+For each flower shop, the following information should be stored: name, location, short description, date of establishment, information about whether the flower shop is located in the EU or not.
+
+When creating a new bouquet, the user should be automatically assigned according to the logged-in user.
+
+It is necessary to create appropriate models for the proper functioning of the system. It should also be possible to add objects through the Django Admin panel.
+
+Using the Bootstrap framework, it is necessary to create the following templates:
+
+/index/ – display of all bouquets (similar to the first image)
+
+/product// – detailed display of a selected bouquet (similar to the second image)
